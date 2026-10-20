@@ -1,0 +1,26 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# IDE / OS
+.vscode/
+.idea/
+*.iml
+Thumbs.db
+.DS_Store
+
+# Runtime-generated face data (created when users register)
+face_door_project/dataset/*/
+face_door_project/trainer/trainer.yml
+face_door_project/trainer/labels.pickle
+
+# Logs / temp
+*.log
+*.tmp
