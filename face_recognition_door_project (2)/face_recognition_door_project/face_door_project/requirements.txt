@@ -6,6 +6,7 @@ numpy==1.26.4
 pillow==10.4.0                     # PIL — Tkinter image support
 pyttsx3==2.90                      # offline voice (PC speakers)
 flask==3.0.3                       # web version (app.py)
+gunicorn
 
 # Notes:
 # - tkinter is built-in on Windows/macOS. On Debian/Ubuntu: sudo apt install python3-tk
