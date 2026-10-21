@@ -1,5 +1,14 @@
-opencv-contrib-python==4.10.0.84
+# Face Recognition Door — Python 3.9 – 3.11 (64-bit) recommended
+# Install: pip install -r requirements.txt
+
+opencv-contrib-python==4.10.0.84   # cv2 + cv2.face (LBPH recognizer)
 numpy==1.26.4
-pillow==10.4.0
-pyttsx3==2.90
-flask==3.0.3
+pillow==10.4.0                     # PIL — Tkinter image support
+pyttsx3==2.90                      # offline voice (PC speakers)
+flask==3.0.3                       # web version (app.py)
+
+# Notes:
+# - tkinter is built-in on Windows/macOS. On Debian/Ubuntu: sudo apt install python3-tk
+# - pyttsx3 voice on Linux: sudo apt install espeak
+# - opencv-contrib-python includes the LBPH face recognizer — do NOT swap it
+#   for plain "opencv-python", registration/training will fail.
